@@ -3,16 +3,25 @@ import { ImageProps, ImageSourcePropType, ImageURISource } from "react-native"
 
 interface Icats {
     categoryId : number,
-    subCat : "servieces"  | "product",
-    subCat2 : "financial",
-    comment: string
+    subCat : "servieces"  | "product" | "other" ,
+    subCat2? : "financial" | "transportation",
+    comment?: string,
+
 }
 export const cats :Icats[] =   
 [
     {
-        "categoryId" : 2615,
+        "categoryId" : 1001,
         "subCat" : "servieces",
         "subCat2" : "financial",
-        "comment" : ""
+},
+    {
+        "categoryId" : 1002,
+        "subCat" : "servieces",
+        "subCat2" : "transportation",
+},
+    {
+        "categoryId" : 1003,
+        "subCat" : "other",
 },
     ]

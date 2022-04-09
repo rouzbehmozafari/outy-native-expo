@@ -6,24 +6,14 @@ import { AddSumTempl } from '../components/templates/AddSumTempl/Index'
 import { RootState } from '../redux/store'
 import { AllMoneyTrans } from '../constants/adds/moneyTrans'
 import myAxios from '../helpers/axiosInterceptors'
+
+
+
 const HomeScreen = ()=>{
     useEffect(()=>{
-        // myAxios.get('ss')
-        // .then((res)=>{console.log(res)}).catch(err => console.log(err))
-    //     fetch('https://localhost:7777/pppp').then(res=>console.log(res))
-    //           .catch((error) => {
-    //     console.error(error);   
-    //   });
+
         
       },[])
-    //   fetch('https://localhost:7777/ttsat')
-    //   .then((response) => response.json())
-    //   .then((json) => {
-    //     console.log(json);
-    //   })
-    //   .catch((error) => {
-    //     console.error(error);
-    //   });
 
     const {theme} = useSelector((state: RootState) => state)
     return (

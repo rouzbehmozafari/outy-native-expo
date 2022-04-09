@@ -5,6 +5,7 @@ import { AllMoneyTrans } from "../../../constants/adds/moneyTrans"
 import { MyText } from "../../atoms/MyText/Index"
 import { ViewAll } from "../../molecules/ViewAll/Index"
 import { AddOverView } from "../../organisms/AddOverview/Index"
+import uuid from 'react-native-uuid';
 import styles from "./styles"
 
 interface Iprops {
@@ -26,6 +27,7 @@ export const AddSumTempl:React.FC<Iprops> = ({header,subCategory,dataArray,Style
                     <AddOverView
                     subCategory= {i.categoryId}
                     title={i.title} imageUrl={i.imageUrl}
+                    key = {uuid.v4()}
                     price={i.price} />
                 )}
                 <ViewAll/>

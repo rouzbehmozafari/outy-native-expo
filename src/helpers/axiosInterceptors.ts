@@ -26,7 +26,7 @@ axiosInstance.interceptors.request.use(
   axiosInstance.interceptors.response.use(
     (response) =>
       new Promise((resolve, reject) => {
-        resolve(response);
+        resolve((response));
       }),
     (error) => {
       if (!error.response) {

@@ -5,6 +5,7 @@ const {theme} = store.getState()
 export default StyleSheet.create({
     wrapper: {
         padding: 0,
-        margin: 0
+        margin: 0,
+        marginTop:theme.spacing.xxl
     }
 })
